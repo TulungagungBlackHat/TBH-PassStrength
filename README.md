@@ -1,31 +1,36 @@
-# TBH-PassStrength - Password Strength Checker
+# TBH-PassStrength v1.1 - Checker + Generator
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python">
-  <img src="https://img.shields.io/badge/Purpose-Defensive%20%7C%20Educational-green?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Safe-100%25%20No%20Crack-orange?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Version-v1.1-red?style=for-the-badge">
+  <img src="https://img.shields.io/badge/New-Generator-green?style=for-the-badge">
 </p>
 
-> **100% Defensive & Aman** - Hanya mengecek kekuatan password milik sendiri, bukan untuk crack.
+> **v1.1 Update** - Tambah **Generator Password Kuat** (defensive).
 
-Oleh **uchil404 | Tulungagung Black Hat**
+## ✨ v1.1 vs v1.0
+- ✅ **Generator** (`--generate`) - Buat 16 char acak (A-Z, a-z, 0-9, simbol) pakai `secrets`
+- ✅ Skor langsung, siap pakai
 
-### ✨ Features
-- 🔐 Skor 0-7 + verdict Sangat Lemah → Sangat Kuat
-- 💡 Saran perbaikan (panjang, besar/kecil, angka, simbol)
-- 🚫 Deteksi password umum & urutan lemah
-- ⚡ Pure Python, tanpa dependency
-
-### 🚀 Usage
+## 🚀 Usage
 ```bash
-git clone https://github.com/TulungagungBlackHat/TBH-PassStrength
-cd TBH-PassStrength
-python3 checker.py -p "MyP@ssw0rd"
-python3 checker.py  # interactive
+# Cek
+python3 checker.py -p "password123"
+
+# Generate kuat
+python3 checker.py --generate
+python3 checker.py --generate -l 20
+
+# Output
+[+] Generated (16 char): Xk9$mP2!qL8@vB4#
+Skor: 7/7 [SANGAT KUAT ✅]
 ```
 
-### 🛡️ Edukasi
-Gunakan passphrase kuat + 2FA. Jangan pakai password yang sama di banyak situs.
+## 🛡️ Defensive
+Gunakan generator + password manager + 2FA. Jangan pakai password sama.
 
-### 📄 License
+## 👥 TBH
+uchil404 - Tulungagung Black Hat
+
+## 📄 License
 MIT
